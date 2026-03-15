@@ -1,113 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixerrifty</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<!-- Built-in Spreadsheet Section -->
+<section id="spreadsheet" class="section">
+<h2>Sharky's Executor Ratings</h2>
 
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Pixerrifty</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#spreadsheet">Spreadsheet</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Welcome to Pixerrifty</h1>
-      <p>Your hub for projects and ideas</p>
-      <a href="#projects" class="btn">Explore</a>
-    </div>
-  </header>
+<table id="myTable">
+<thead>
+<tr>
+<th onclick="sortTable(0)">Executor</th>
+<th onclick="sortTable(1)">Platform</th>
+<th onclick="sortTable(2)">UNC</th>
+<th onclick="sortTable(3)">sUNC</th>
+<th onclick="sortTable(4)">Detection</th>
+<th onclick="sortTable(5)">Status</th>
+</tr>
+</thead>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>This is a professional, responsive website hosted on GitHub Pages. Designed for clarity, speed, and visual appeal.</p>
-  </section>
+<tbody>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>Short description of the project with key highlights.</p>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Short description of the project with key highlights.</p>
-      </div>
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>Short description of the project with key highlights.</p>
-      </div>
-    </div>
-  </section>
+<tr class="category"><td colspan="6">Trusted PC Free Executors (Keyless)</td></tr>
 
-  <!-- Built-in Spreadsheet Section -->
-  <section id="spreadsheet" class="section">
-    <h2>My Spreadsheet</h2>
-    <table id="myTable">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">Task</th>
-          <th onclick="sortTable(1)">Status</th>
-          <th onclick="sortTable(2)">Priority</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Design Homepage</td>
-          <td>Completed</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Setup GitHub Pages</td>
-          <td>In Progress</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Add Projects</td>
-          <td>Pending</td>
-          <td>Medium</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="margin-top:0.5rem;">*Click column headers to sort*</p>
-  </section>
+<tr><td>Xeno</td><td>PC</td><td>82%</td><td>0%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
+<tr><td>Velocity</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
+<tr><td>Solara</td><td>PC</td><td>67%</td><td>39%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
+<tr><td>JJSploit</td><td>PC</td><td>82%</td><td>0%</td><td>Undetected</td><td>Updated</td></tr>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Reach out via <a href="mailto:contact@pixerrifty.com">email</a> or connect on social media.</p>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Pixerrifty. All rights reserved.</p>
-  </footer>
+<tr class="category"><td colspan="6">Trusted PC Free Executors (Key Required)</td></tr>
 
-  <!-- Spreadsheet JS -->
-  <script>
-  function sortTable(col) {
-    const table = document.getElementById("myTable");
-    const rows = Array.from(table.tBodies[0].rows);
-    let sorted = rows.sort((a,b) => {
-      let aText = a.cells[col].innerText.toLowerCase();
-      let bText = b.cells[col].innerText.toLowerCase();
-      return aText.localeCompare(bText);
-    });
-    sorted.forEach(row => table.tBodies[0].appendChild(row));
-  }
-  </script>
-  
-</body>
-</html>
+<tr><td>Bunni.Fun</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Valex Internal</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Swift</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Fluxus</td><td>PC</td><td>86%</td><td>52%</td><td>Undetected</td><td>Updated (Compatibility issues)</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted PC Paid Executors</td></tr>
+
+<tr><td>Potassium</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
+<tr><td>Seliware</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Sirhurt</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
+<tr><td>Volcano</td><td>PC</td><td>Not Updated</td><td>Not Updated</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Water</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Volt</td><td>PC</td><td>99%</td><td>98%</td><td>Undetected</td><td>Not Updated</td></tr>
+<tr><td>Cryptic</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
+<tr><td>Isaac</td><td>PC</td><td>98%</td><td>98%</td><td>Undetected</td><td>Updated</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted MAC Executors</td></tr>
+
+<tr><td>Oplumware</td><td>Mac</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Hydrogen</td><td>Mac</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>Mac</td><td>N/A</td><td>N/A</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>MacSploit</td><td>Mac</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted Android Executors</td></tr>
+
+<tr><td>Frostware</td><td>Android</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>JJSploit</td><td>Android</td><td>99%</td><td>100%</td><td>Undetected</td><td>Down / Not Updated</td></tr>
+<tr><td>Fluxus</td><td>Android</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Delta</td><td>Android</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Codex</td><td>Android</td><td>98%</td><td>96%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Ronix</td><td>Android</td><td>N/A</td><td>N/A</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Arceus X Neo</td><td>Android</td><td>Failed Test</td><td>98%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Cryptic</td><td>Android</td><td>98%</td><td>97%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>VegaX</td><td>Android</td><td>98%</td><td>Failed Test</td><td>Undetected</td><td>Updated</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted iOS Executors</td></tr>
+
+<tr><td>Delta</td><td>iOS</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Codex</td><td>iOS</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Arceus X Neo</td><td>iOS</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>iOS</td><td>N/A</td><td>N/A</td><td>Undetected</td><td>Updated</td></tr>
+
+</tbody>
+</table>
+
+<p style="margin-top:10px;">Click column headers to sort the database.</p>
+</section>
