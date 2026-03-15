@@ -3,119 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pixerrifty</title>
 
-<link rel="stylesheet" href="style.css">
+<title>Pixerrifty Executor Database</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+<style>
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#ff4d4d,#8b0000);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.1rem;
+opacity:.9;
+}
+
+/* SECTION */
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+
+th,td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+th{
+background:#ff4d4d;
+color:white;
+font-weight:600;
+}
+
+/* alternating rows */
+
+tbody tr:nth-child(even){
+background:#fff5f5;
+}
+
+/* category rows */
+
+.category td{
+background:#8b0000;
+color:white;
+font-weight:700;
+text-align:center;
+font-size:1.05rem;
+}
+
+/* footer */
+
+footer{
+background:#8b0000;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+font-size:.9rem;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
 
-<nav class="navbar">
-<div class="logo">Pixerrifty</div>
-
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#spreadsheet">Executors</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<div class="hero">
-<h1>Welcome to Pixerrifty</h1>
-<p>Executor ratings, projects, and community tools</p>
-<a href="#spreadsheet" class="btn">View Database</a>
-</div>
+<h1>Sharky's Executor Ratings</h1>
+<p>Executor database with UNC / sUNC testing</p>
 
 </header>
 
 
-<section id="about" class="section">
+<section class="section">
 
-<h2>About</h2>
-
-<p>
-Pixerrifty is a community hub for executor testing and ratings.
-Our database tracks UNC, sUNC, detection status, and updates across platforms.
-</p>
-
-</section>
-
-
-
-<section id="projects" class="section">
-
-<h2>Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Executor Database</h3>
-<p>Testing UNC and sUNC ratings across platforms.</p>
-</div>
-
-<div class="card">
-<h3>Community Testing</h3>
-<p>Executors are tested by the Pixerrifty team.</p>
-</div>
-
-<div class="card">
-<h3>Development</h3>
-<p>Improving exploit documentation and testing.</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="spreadsheet" class="section">
-
-<h2>Sharky's Executor Ratings</h2>
-
-<table id="executorTable">
+<table>
 
 <thead>
+
 <tr>
-<th onclick="sortTable(0)">Executor</th>
-<th onclick="sortTable(1)">Platform</th>
-<th onclick="sortTable(2)">UNC</th>
-<th onclick="sortTable(3)">sUNC</th>
-<th onclick="sortTable(4)">Detection</th>
-<th onclick="sortTable(5)">Status</th>
+<th>Executor</th>
+<th>Platform</th>
+<th>UNC</th>
+<th>sUNC</th>
+<th>Detection</th>
+<th>Status</th>
 </tr>
+
 </thead>
 
 <tbody>
 
 <tr class="category"><td colspan="6">Trusted PC Free Executors (Keyless)</td></tr>
 
-<tr><td>Xeno</td><td>PC</td><td>82%</td><td>0%</td><td>Undetected</td><td>Updated</td></tr>
-<tr><td>Velocity</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected</td><td>Updated</td></tr>
-<tr><td>Solara</td><td>PC</td><td>67%</td><td>39%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Xeno</td><td>PC</td><td>82%</td><td>0%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
+<tr><td>Velocity</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
+<tr><td>Solara</td><td>PC</td><td>67%</td><td>39%</td><td>Undetected (ban waves possible)</td><td>Updated</td></tr>
 <tr><td>JJSploit</td><td>PC</td><td>82%</td><td>0%</td><td>Undetected</td><td>Updated</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted PC Free Executors (Key Required)</td></tr>
+
+<tr><td>Bunni.Fun</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Valex Internal</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Swift</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Fluxus</td><td>PC</td><td>86%</td><td>52%</td><td>Undetected</td><td>Updated (Compatibility issues)</td></tr>
+
 
 <tr class="category"><td colspan="6">Trusted PC Paid Executors</td></tr>
 
-<tr><td>Potassium</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected</td><td>Not Updated</td></tr>
+<tr><td>Potassium</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
 <tr><td>Seliware</td><td>PC</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
-<tr><td>Sirhurt</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected</td><td>Not Updated</td></tr>
+<tr><td>Sirhurt</td><td>PC</td><td>99%</td><td>94%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
+<tr><td>Volcano</td><td>PC</td><td>Not Updated</td><td>Not Updated</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Water</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Volt</td><td>PC</td><td>99%</td><td>98%</td><td>Undetected</td><td>Not Updated</td></tr>
+<tr><td>Cryptic</td><td>PC</td><td>99%</td><td>100%</td><td>Undetected (ban waves possible)</td><td>Not Updated</td></tr>
+<tr><td>Isaac</td><td>PC</td><td>98%</td><td>98%</td><td>Undetected</td><td>Updated</td></tr>
+
+
+<tr class="category"><td colspan="6">Trusted Mac Executors</td></tr>
+
+<tr><td>Oplumware</td><td>Mac</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Hydrogen</td><td>Mac</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>Mac</td><td>N/A</td><td>N/A</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>MacSploit</td><td>Mac</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
+
 
 <tr class="category"><td colspan="6">Trusted Android Executors</td></tr>
 
+<tr><td>Frostware</td><td>Android</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>JJSploit</td><td>Android</td><td>99%</td><td>100%</td><td>Undetected</td><td>Down / Not Updated</td></tr>
+<tr><td>Fluxus</td><td>Android</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
 <tr><td>Delta</td><td>Android</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
 <tr><td>Codex</td><td>Android</td><td>98%</td><td>96%</td><td>Undetected</td><td>Updated</td></tr>
-<tr><td>Fluxus</td><td>Android</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Ronix</td><td>Android</td><td>N/A</td><td>N/A</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Arceus X Neo</td><td>Android</td><td>Failed Test</td><td>98%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>Cryptic</td><td>Android</td><td>98%</td><td>97%</td><td>Undetected</td><td>Updated</td></tr>
+<tr><td>VegaX</td><td>Android</td><td>98%</td><td>Failed Test</td><td>Undetected</td><td>Updated</td></tr>
+
 
 <tr class="category"><td colspan="6">Trusted iOS Executors</td></tr>
 
 <tr><td>Delta</td><td>iOS</td><td>99%</td><td>100%</td><td>Undetected</td><td>Updated</td></tr>
 <tr><td>Codex</td><td>iOS</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
+<tr><td>Arceus X Neo</td><td>iOS</td><td>Down</td><td>Down</td><td>N/A</td><td>Not Updated</td></tr>
 
 </tbody>
 
@@ -123,48 +193,11 @@ Our database tracks UNC, sUNC, detection status, and updates across platforms.
 
 </section>
 
-
-
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<p>Email: contact@pixerrifty.com</p>
-
-</section>
-
-
-
 <footer>
 
-<p>© 2026 Pixerrifty</p>
+© 2026 Pixerrifty Executor Database
 
 </footer>
-
-
-
-<script>
-
-function sortTable(col) {
-
-const table = document.getElementById("executorTable");
-
-const rows = Array.from(table.tBodies[0].rows);
-
-const sorted = rows.sort((a,b) => {
-
-const A = a.cells[col]?.innerText.toLowerCase() || "";
-const B = b.cells[col]?.innerText.toLowerCase() || "";
-
-return A.localeCompare(B);
-
-});
-
-sorted.forEach(row => table.tBodies[0].appendChild(row));
-
-}
-
-</script>
 
 </body>
 </html>
