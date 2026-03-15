@@ -32,6 +32,19 @@ header { background: linear-gradient(135deg,#ff4d4d,#b30000); color:white; }
 #myTable th { background:#ff4d4d; color:white; }
 #myTable tr:nth-child(even) { background:#ffe5e5; }
 
+/* Category rows for executor groups */
+.category td{
+  background:#b30000;
+  color:white;
+  font-weight:700;
+  text-align:center;
+}
+
+/* Hover effect for rows */
+#myTable tbody tr:hover td{
+  background:#ffd6d6;
+}
+
 /* Footer */
 footer { background:#990000; color:white; text-align:center; padding:1.5rem 0; margin-top:2rem; font-size:0.9rem; }
 
